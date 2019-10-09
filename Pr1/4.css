@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+}
+
+body {
+    border: 1px solid;
+}
+
+.header{
+    border: 1px solid;
+    height: 250px;
+}
+
+.conteiner {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.menu-wrapper{
+    margin-top: 47px;
+}
+
+.menu{
+    margin-top: 40px;
+    padding: 10px;
+	display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+
+.content-wrapper{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.footer{
+    height: 100px;
+    border: 1px solid;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-wrapper p{
+    text-align: center;
+}

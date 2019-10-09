@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF 8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel='icon' href="tag.ico">
+	<script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class ="conteiner">
+		<nav>
+			<ul class="header-menu">
+				<li><a href="#">home</a></li>
+				<li><a href="#">Pr_nav</a>
+					<ul class="header-menu-submenu">
+						<li><a href="#numPr" onclick="scrl('#numPr')">Пр 1.1</a></li>
+					</ul>
+				</li>
+				<li><a href="#footer" onclick="scrl('#footer')">info</a></li>
+			</ul>
+		</nav>
+		<div class="header-row">
+			<div class="header-row-wrapper">
+				<img src="img/horse.png" alt="horse">
+				<div class="header-row-wrapper-text">
+						<p>Hi! hat's up? Here are my practical works.</p>
+						<a href="#works" onclick="scrl('#works')" class="fciA navItem"><span class="fciSpan">View my work</span></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div class="works" id="works">
+	<div class ="conteiner">
+		<div class="works-Pr">My practical</div>
+		<div class="works-numPr" id="numPr">Практична 1.1</div>
+		<div class="works-cards">
+			<div class='works-cards-wrapper'>  <!-- smth == wrapper -->
+				<div class="works-cards-wrapper__card">
+					<a href="Pr1/1.html"><img src="img/Pr11.png"></a>
+					<div class="works-cards-wrapper__card-body">
+						<h2><a href="Pr1/1.html">Задача №1</a></h2>
+						<p>Створіть сторінку, на якій будуть зображені батарейки з різною кількістю заряду.</p>
+					</div>
+				</div>
+			</div>
+			<div class='works-cards-wrapper'>
+				<div class="works-cards-wrapper__card">
+					<a href="Pr1/2.html"><img src="img/Pr12.png"></a>
+					<div class="works-cards-wrapper__card-body">
+						<h2><a href="Pr1/2.html">Задача №2</a></h2>
+						<p>Створіть сторінку, яка реалізує нумерацію. Вид нумерації може бути довільним або як в прикладі.</p>
+					</div>
+				</div>
+			</div>
+			<div class='works-cards-wrapper'>
+				<div class="works-cards-wrapper__card">
+					<a href="Pr1/3.html"><img src="img/Pr13.png"></a>
+					<div class="works-cards-wrapper__card-body">
+						<h2><a href="Pr1/3.html">Задача №3</a></h2>
+						<p >Створити випадаючий список.</p>
+					</div>
+				</div>
+			</div>
+			<div class='works-cards-wrapper'>
+				<div class="works-cards-wrapper__card">
+					<a href="Pr1/4.html"><img src="img/Pr14.png"></a>
+					<div class="works-cards-wrapper__card-body">
+						<h2><a href="Pr1/4.html">Задача №4</a></h2>
+						<p>Створіть просту HTML сторінку по даному прикладу. Контент можете вибрати самі.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer" id="footer">
+	<div class="conteiner">
+		<ul class="footer-foot_men">
+			<li>email: <a href="mailto:foreman270478@gmail.com" class="footer-foot_men-info_span">foreman270478@gmail.com</a></li>
+			<li>telegram: <a href="https://t.me/G_E_O_k"class="footer-foot_men-info_span">G_E_O_k</a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+function scrl (id) {
+  $('html, body').animate ({
+  scrollTop: $(id).offset ().top
+  }, 900);
+  return false;
+}
+</script>
+</body>
+</html>
