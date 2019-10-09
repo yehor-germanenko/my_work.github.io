@@ -209,7 +209,10 @@ a {
     .works-cards-wrapper {
       margin-top: 40px;
       margin-left: 20px;
-      margin-right: 20px; }
+      margin-right: 20px;
+      /*&__card:hover{
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+      */ }
       .works-cards-wrapper__card {
         background-color: #EAEAEA;
         border-radius: 5px;
@@ -230,10 +233,6 @@ a {
           color: #888888;
           font-family: Trebuchet MS, sans-serif; }
 
-/*.card:hover{
-	font-size: 30em;
-	transition-duration: 0.2s;
-}*/
 .footer {
   background-color: #181A1B;
   height: 70px;

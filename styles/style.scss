@@ -1,3 +1,5 @@
+// imports
+
 @import "_MainButton.scss";
 
 // variables 
@@ -8,12 +10,9 @@ $OC-text:  #888888;
 $hf: #181A1B;
 $Mff: Courier, monospace;
 
-// mixins WH
+// mixins 
 
-@mixin WH ($width, $height){
-  width: $width;
-  height: $height;
-}
+
 
 // main
 
@@ -168,6 +167,7 @@ a {
 	      border-radius: 5px;
 	      width: 300px;
         height: 450px;
+        //transition: 0.3s ease-in-out;
 
         img {
           border-radius: 5px;
@@ -176,10 +176,14 @@ a {
         }
       }
 
+      /*&__card:hover{
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+      */
+
       &__card-body{
         color: #000;
         padding: 15px;
-
+        
         a{
           color: #000;
         }
@@ -196,11 +200,6 @@ a {
     }
   }
 }
-
-/*.card:hover{
-	font-size: 30em;
-	transition-duration: 0.2s;
-}*/
 
 .footer{
   background-color: $hf;
