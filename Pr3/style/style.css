@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block{
+    background-color: #FBF5EE;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #75CAC6;
+    display: flex;
+    width: 1000px;
+}
+
+.text{
+    width: 300px;
+    color: #8B1C22;
+    font-weight: bold;
+}
+
+.in{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 285px;
+}
+
+.in input{
+    margin: 7px 0 7px 0;
+    height: 20px;
+    border: 1px solid #A9A9A9;
+}
+
+.inop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 285px;
+}
+
+.inop input{
+    margin: 9px 0 9px 0;
+    border: 1px solid #A9A9A9;
+}
+
+.inop select{
+    margin: 9px 0 9px 0;
+    border: 1px solid #A9A9A9;
+}
+
+.inop textarea{
+    margin: 9px 0 9px 0;
+    border: 1px solid #A9A9A9;
+    max-width: 285px;
+    max-height: 100px;
+}
