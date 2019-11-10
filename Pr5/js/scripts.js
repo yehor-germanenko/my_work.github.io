@@ -12,7 +12,7 @@ jQuery("document").ready(function($){
     $("#shmiak").on("click", function(){
         var rez = "";
         for (var i = 0; i < 8; i++){
-            rez += nabor[Math.floor(Math.random()*(len))];
+            rez += nabor[Math.floor(Math.random()*(len))];  //nabor[getRandomInt(len)]
         }
         $('#dich').val(rez);
     });
