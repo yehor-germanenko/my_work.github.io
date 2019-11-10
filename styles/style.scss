@@ -72,6 +72,7 @@ a {
       display: none;
       position: absolute;
       border-radius: 5px;
+      z-index: 5;
       
 
       & li a{
@@ -125,7 +126,8 @@ a {
           -webkit-transition: color 0.2s;
           -moz-transition: color 0.2s;
           -o-transition: color 0.2s;
-          transition: color 0.2s; 
+          transition: color 0.2s;
+          z-index: 1;
         }
       }
     }

@@ -145,7 +145,8 @@ a {
       background-color: rgba(0, 0, 0, 0.9);
       display: none;
       position: absolute;
-      border-radius: 5px; }
+      border-radius: 5px;
+      z-index: 5; }
       .header-menu-submenu li a {
         text-transform: lowercase;
         padding: 0px; }
@@ -184,7 +185,8 @@ a {
         -webkit-transition: color 0.2s;
         -moz-transition: color 0.2s;
         -o-transition: color 0.2s;
-        transition: color 0.2s; }
+        transition: color 0.2s;
+        z-index: 1; }
 
 .works {
   background-color: #36393F;
