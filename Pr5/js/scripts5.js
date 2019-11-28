@@ -6,19 +6,13 @@ jQuery("document").ready(function($){
             $('input').val(expression);
         });
 
-        $("input").blur(function(){
-            expression = $(this).val();
-        });
+        $("input").blur(function(){expression = $(this).val();});
 
         $('.clear').on('click', function(){
             expression = "";
             $('input').val(expression);
         });
 
-        $(".equal").on("click", function(){
-            $('input').val(eval(expression));
-        });
-
-        
+        $(".equal").on("click", function(){$('input').val(eval(expression));});
     });
 });
