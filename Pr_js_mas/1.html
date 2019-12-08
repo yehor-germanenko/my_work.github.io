@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+                            /*Задача 1 */    
+    console.log("p1")
+    function camelize(str){
+      let arr1 =str.split('')
+
+      for (let i = 0; i<arr1.length; i++){
+        if (arr1[i] == "-"){
+          arr1[i+1] = arr1[i+1].toUpperCase()
+          arr1.splice(i,1,'')
+        }
+      }
+      var arr2 = arr1.join('')
+      return arr2
+    }
+    var arr = "my-short-string"
+    console.log(camelize(arr))
+							/*Задача 2 */
+    console.log("p2")
+    function filterRange(arr,a,b){
+      let species = []
+      for(var i = 0; i < arr.length; i++){
+        if (arr[i] <= b && arr[i]>=a){
+            species.push(arr[i])
+        }
+      }
+      return species
+    }
+    let arr3 = [5, 3, 8, 1]
+    console.log(filterRange(arr3,1,4))
+							/*Задача 3 */
+    console.log("p3")
+    function filterRangeInPlace(arr, a, b) {
+        for (let i = 0; i < arr.length; i++) {
+            let val = arr[i];
+            if (val < a || val > b) {
+                arr.splice(i, 1);
+                i--;
+            }
+        }
+    }
+    let ar = [5, 3, 8, 1];
+    filterRangeInPlace(ar, 1, 4);
+    console.log(ar)
+							/*Задача 4 */
+    console.log("p4")
+    let arr4 = [5,23,3,47,7,8,12]
+    function reversesort(arr){
+      return  arr.sort((a,b) => b-a)
+    }
+    console.log(reversesort(arr4))
+							/*Задача 5 */
+    console.log("p5")
+    let arr5 = ["HTML", "JavaScript", "CSS"];
+    function copySorted(arr){
+      let rarr = arr.slice(0, arr.length)
+      return rarr.sort()
+    }
+    console.log(copySorted(arr5))
+    console.log(arr5)
+							/*Задача 6 */
+    console.log("p6")
+    function Calculator() {
+        let methods = {
+        "-": function(a, b) {
+            return a - b;
+        },
+        "+": function(a, b) {
+            return a + b;
+        }
+        };
+        this.calc = function(str){
+        let split = str.split(' '),
+            a = split[0],
+            op = split[1],
+            b = split[2]
+
+        return methods[op](Number(a), Number(b));
+        }
+        this.addMethod = function(name, func) {
+        methods[name] = func;
+        };
+    }
+    let calculate = new Calculator;
+    calculate.addMethod("*", function(a, b) {
+        return a * b;
+    });
+    calculate.addMethod("/", function(a, b) {
+        return a / b;
+    });
+    calculate.addMethod("**", function(a, b) {
+        return Math.pow(a, b);
+    });
+    console.log(calculate.calc("9 / 3"), calculate.calc("5 ** 2"), calculate.calc("47 * 3"));
+                            /*Задача 7 */
+    console.log("p7")
+    let vasya = { name: "Вася", age: 25 };
+    let petya = { name: "Петя", age: 30 };
+    let masha = { name: "Маша", age: 28 };
+
+    let users = [ vasya, petya, masha ];
+    let names = users.map(item => item.name);
+    console.log(users);
+    console.log(names);
+                            /*Задача 8 */
+    console.log("p8");
+    let v = { name: "вася", surname: "Пупкин", id: 1 };
+    let p = { name: "Петя", surname: "іванов", id: 2 };
+    let m = { name: "Маша", surname: "Петрова", id: 3 };
+    let us = [ v, p, m];
+
+    let usersMapped = us.map(user => ({
+    fullName: `${user.name} ${user.surname}`,
+    id: user.id
+    }));
+    console.log(usersMapped[0].id); // 1
+    console.log(usersMapped[0].fullName);
+                            /*Задача 9 */
+    console.log("p9");
+    function sortByAge(arr) {
+        arr.sort((a, b) => a.age > b.age ? 1 : -1);
+    }
+
+    let sya = { name: "вася", age: 25 };
+    let tya = { name: "Петя", age: 30 };
+    let sha = { name: "Маша", age: 28 };
+
+    let arrr = [sya, tya, sha];
+
+    sortByAge(arrr);
+
+    // теперь отсортировано: [vasya, masha, petya]
+    console.log(arrr[0].name); // вася
+    console.log(arrr[1].name); // Маша
+    console.log(arrr[2].name); // Петя
+                            /*Задача 10 */
+    console.log("p10")
+    let arr10 = [12,24,534,52,45,457,689,876,54,3]
+    function shuffle(arr){
+        let a, Temp;
+        for (let i = arr.length - 1; i > 0; i--) {
+            a = Math.floor(Math.random()*(i+1))
+            Temp = arr[a]
+            arr[a] = arr[i]
+            arr[i] = Temp
+        }
+        return arr
+    }
+    console.log(shuffle(arr10))
+                            /*Задача 11 */
+    console.log("p11")
+    let videovasya = { name: "вася", age: 30  };
+    let videopetya = { name: "Петя", age: 30 };
+    let vmasha = { name: "Маша", age: 30 };
+    let arrv1 = [ videovasya, videopetya, vmasha ];
+
+    function getAverageAge(users){
+        return users.reduce((sum, guef) => sum + guef.age, 0) / users.length;
+    }
+    console.log(getAverageAge(arrv1))
+                            /*Задача 12 */
+    console.log("p12")
+    let strings = ["guef","meow","guef","guef","guef","meow","meow"]
+    function unique(arr){
+        let result = []
+        for (let str of arr) {
+            if (!result.includes(str)) {
+                result.push(str);
+            }
+        }
+        return result;
+    }
+    console.log(unique(strings))
+    </script>
+</body>
+</html>

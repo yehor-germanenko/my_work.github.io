@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="gamburger.css">
+    <title>gamburger</title>
+  </head>
+<body>
+<form name="" action="" id="form">
+	<fieldset>
+		<legend>Create Hamburger</legend>
+		<div class="row">
+			<p>Choose Size</p>
+			<div class="radio-variant">
+				<input type="radio" name="size" id="small" value="small" checked/>
+				<label for="small">Small</label>
+			</div>
+			<div class="radio-variant">
+				<input type="radio" name="size" id="large" value="large" />
+				<label for="large">Large</label>
+			</div>
+		</div>
+    	<span>Additions to burger</span>
+		<div class="row additions">
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="cheese" value="cheese"/>
+				<label for="cheese"><img src="img/cheese.jpg"></label>
+			</div>
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="salad" value="salad"/>
+				<label for="salad"><img src="img/salad2.png"></label>
+			</div>
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="onion" value="onion"/>
+				<label for="onion"><img src="img/onion.png"></label>
+			</div>
+		</div>
+		<span>Additions</span>
+		<div class="row additions">
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="potato" value="potato"/>
+				<label for="potato"><img src="img/potato.png"></label>
+			</div>
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="coca_cola" value="coca_cola"/>
+				<label for="coca_cola"><img src="img/cola.jpg"></label>
+			</div>
+		</div>
+		<span>Sauces</span>
+		<div class="row additions">
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="ketchup" value="ketchup"/>
+				<label for="ketchup"><img src="img/ketchup.png"></label>
+			</div>
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="mayo" value="mayo"/>
+				<label for="mayo"><img src="img/mayo.jpg"></label>
+			</div>
+			<div class="checkbox-variant">
+				<input type="checkbox" name="add" id="mustard" value="mustard"/>
+				<label for="mustard"><img src="img/mustard.jpg"></label>
+			</div>
+		</div>
+		<div class="submit">
+			<input type="submit" value="Make Order" />
+		</div>
+	</fieldset>
+	<br/>
+	<div id="result">
+		<div><b>Стоимость:</b> <span id="price">0</span> тугриков</div>
+		<div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+	</div>
+</form>
+<script src="gamburger.js"></script>
+</body>
+</html>
